@@ -1,0 +1,55 @@
+header{
+	background:#2f4357;
+	color:#fff;
+                }
+
+.main{
+	background:#f2f2f2;
+}
+
+.color{
+	background:#34495e;
+}
+article{
+	background: #2f4357;
+}
+aside{
+	background:#c0392b;
+}
+
+footer{
+	background:#16a085;
+	color:#fff;
+}
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+ nav.navbar ul.nav li {
+    top:4px; 
+    background-color: #FFF;
+    text-decoration: strong;
+    font-size: 40px;
+    font-family: "Castellar", Castellar,  Arial, sans-serif;
+    border-right: medium double #369;
+    
+}
+
+nav.navbar a:hover{
+  color: #032C6A;  /*Sets the text hover color on navbar*/
+}
+nav.navbar a:link{
+  color: #FFFFFF;  
+}
+
+    nav.navbar a:active{
+ 
+  color: #032C6A;  
+}
