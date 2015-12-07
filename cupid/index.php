@@ -25,42 +25,15 @@
     <script src="bootstrap/js/respond.min.js"></script>
     <![endif]-->
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<style type="text/css">
+        @font-face {
+            font-family: 'Glyphicons Halflings';
+            src: url('/fonts/glyphicons-halflings-regular.eot');
+        }
+ </style>
 </head>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("#element").hide();
-  });
-  $("#show").click(function(){
-    $("#element").show();
-  });
-});
-</script>
 
-<script type="text/javascript">
 
-$(document).ready(function() {
-
-    $("#enviar-btn").click(function() {
-
-        var name = $("input#name").val();
-        var message = $("textarea#message").val();
-
-        var dataString = 'name=' + name + '&message=' + message;
-
-        $.ajax({
-            type: "POST",
-            url: "addmessage.php",
-            data: dataString,
-            success: function() {
-                $("#element").hide();
-                $('#newmessage').append('<h2>Tu información ha sido recibida correctamente!</h2><table><tr><td>Nombre:</td><td>'+name+'</td></tr><tr><td>Mensaje:</td><td>'+message+'</td></tr></table>');
-            }
-        });
-        return false;
-    });
-});
-</script>
 
 <body data-spy="scroll" data-target="#topnav">
 
@@ -113,7 +86,7 @@ $(document).ready(function() {
 </div>
 
 
-               
+
 
             </ul>
 
@@ -132,8 +105,8 @@ $(document).ready(function() {
 
     <div class="intro">
         <div class="container">
-    
-            
+
+
                 <div class="row panel">
                 <h1 class="text-center">Dangerous <span>Eagle</span></h1>
 
@@ -146,7 +119,7 @@ $(document).ready(function() {
                 <div class="up-triangle animated fadeInUp">
 
                     <div class="info">
-                    
+
                         <i class="icon icon-cogs"></i><br/>
                         Bootstrap 3
                     </div>
@@ -207,7 +180,7 @@ $(document).ready(function() {
             </div>
 
         </div>
-          
+
     </div>
 
 </div>
@@ -219,24 +192,76 @@ $(document).ready(function() {
         <div class="col-md-9 text-left">
 
             <h2>Top</h2><h1>10</h1><h2> del mes </h2>
+            <br>
             <table>
-          <ol class="list-group">
-            <li > Coldplay</li>
-            <li></li>
-            <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
 
+
+          <ol >
+            <div class="panel panel-defaul">
+              <div class="panel-body">
+
+                 1. Coldplay
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                2.
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                 3. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                4. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                5. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                6. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                7. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                8. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                9. Arjona
+              </div>
+            </div>
+
+            <div class="panel panel-defaul" >
+              <div class="panel-body">
+                10. Arjona
+              </div>
+            </div>
     </table>
 
         </div>
     </div>
-   
+
 
 
     </div>
@@ -249,30 +274,30 @@ $(document).ready(function() {
     <div class="container">
         <div class="inner-page">
             <h3 class="text-center">Los videos de música más vistos en Youtube</h3>
-
-     <div class="container">            
+<br>
+     <div class="container">
             <div class="row">
                  <div class="col-sm-4"><h1>LET IT GO</h1> James Bay</div>
                 <div class="col-sm-8" "text-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GsPq9mzFNGY" frameborder="0" allowfullscreen></iframe>
-                    
+
                 </div>
  </div>
-      <div class="container">            
+      <div class="container">
             <div class="row">
                  <div class="col-sm-4"><h1>Happy Xmas</h1> John Lennon</div>
                 <div class="col-sm-8" "text-center">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/S84RLgnz7Rs" frameborder="0" allowfullscreen></iframe>
                 </div>
  </div>
-       <div class="container">            
+       <div class="container">
             <div class="row">
                  <div class="col-sm-4"><h1>A Sky Full of Stars</h1> Coldplay</div>
                 <div class="col-sm-8" "text-center">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/VPRjCeoBqrI" frameborder="0" allowfullscreen></iframe>
                 </div>
  </div>
-  
+
 
 </section>
 <section class="portfolio" id="portfolio">
@@ -281,9 +306,9 @@ $(document).ready(function() {
         <div class="col-md-9  inner-page">
            <br><br> <h2>Listado de Canciones</h2></br></br>
 
-         <?php
-include 'models.php';
-?>
+         <?php include 'models.php'; ?>
+
+
 <table class="table-hover">
     <tr>
         <th><b><h3>Nombre</b></h3></th>
@@ -293,31 +318,113 @@ include 'models.php';
         <th><b><h3>Tamaño</b></h3></th>
         <th></th>
     </tr>
-    <?php foreach (Track::all(1000) as $track):?>
-    <tr>
-        <td>
-        <form class="form-inline" role="form"  action="contenido_track.php" method="GET">
-            <?php   
+    <?php $offset = isset($_GET['o']) ? $_GET['o'] : 0;
 
-            echo "<input type='hidden' name='cve' value='$track->TrackId'>";
-            echo "<button  class='btn btn-default' type='submit'>$track->Name</button>";
-            ?>
-            </form>
-        </td>
-        <td><?= $track->Name?></td>
-        <td><?= $track->Album->Title?></th>
-        <td><?= $track->Album->Artist->Name?></td>
-        <td><?= $track->Milliseconds/60000?></td>
-        <td><?= $track->Bytes/1000000?></td>
-        
+    $num = Track::all(1000);
+    $numero_filas = Track::total();
+
+    ?>
+    <?php foreach (Track::all(10,$offset) as $track):?>
+    <tr id='<?= $track->TrackId ?>'>
+
+
+      <td>
+        <button  class='btn btn-default btn-sm button' type='button' onclick='modalEdit(<?= utf8_encode
+        ($track->TrackId) ?>)'><?=$track->Name?></button>
+       </td>
+        <td><?= utf8_encode($track->Album->Title)?></td>
+        <td><?= utf8_encode($track->Album->Artist->Name)?></td>
+        <td><?= round($track->Milliseconds/60000)?> mins.</td>
+        <td><?= round($track->Bytes/1000000)?> MB</td>
+         <td><a  <?= "href=borrar_track.php?id='".$track->TrackId."'" ?>>Borrar</a></td>
+
+
     </tr>
     <?php endforeach; ?>
 
 </table>
-               
+<div class="container"<>
+<nav>
+<ul class="pagination">
+<li>
+<?php if(!($offset==0)){
+echo "<a href='index.php?o=".($offset-10)."' aria-label='Previous'>Atras</a>";
+}else{
+echo "<a aria-label='Previous'>Atras</a>";
+}
+
+?>
+
+
+</a>
+</li>
+
+<?php
+$num_pags = ceil($numero_filas/10);
+for ($i=$offset; $i < $offset+10; $i++) {
+if($i==$offset&&!$i==0){
+echo "<li><a >...</a></li>";
+}
+echo "<li><a href='index.php?o=".($i*10)."'>".($i+1)."</a></li>";
+if($i==$offset+9){
+echo "<li><a >...</a></li>";
+}
+
+}
+
+?>
+<li>
+
+<?php if(!(($offset+10)>=$numero_filas)){
+echo "<a href='index.php?o=".($offset+10)."' aria-label='Next'>Siguiente</a>";
+}else{
+echo "<a aria-label='Next'>Siguiente</a>";
+}
+?>
+<a href="index.php?o=0" aria-label="Inicio">Inicio</a>
+
+
+</a>
+</li>
+</ul>
+</nav>
+</div>
         </div>
+        <span > Mostrando resultados: <?= $offset?>-<? if($offset+10>$numero_filas){echo $numero_filas;}else{echo $offset+10;};?>/<?= $numero_filas ?>
     </div>
 </div>
+
+<div id="modalEdit" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Datos de la pista</h4>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="id_track_modal" value="">
+        <h4>Nombre de Pista</h4>
+        <input class="form-control" type="text" id="nombre_pista_modal" value="">
+        <h4>Artista</h4>
+        <input class="form-control" type="text" id="artista_album_modal" value="">
+        <h4>Titulo del album</h4>
+        <input class="form-control" type="text" id="titulo_album_modal" value="">
+        <h4>Milisegundos</h4>
+        <input class="form-control" type="text" id="milisegundos_track_modal" value="">
+        <h4>Bytes de la pista</h4>
+        <input class="form-control" type="text" id="bytes_track_modal" value="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal" id="btn_guardar_modal">Guardar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 <div class="clr"></div>
@@ -772,11 +879,7 @@ include 'models.php';
     <div class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <a class="logo" href="index.html">
-                        <img src="images/logo.png" alt="Template Eden">
-                    </a>
-                </div>
+
                 <div class="col-md-5">
                     <p>&copy; Copyright 2013 by Template Eden. All Rights Reserved.</p>
                 </div>
@@ -791,9 +894,11 @@ include 'models.php';
                 </div>
             </div>
         </div>
+
     </div>
 </footer>
 
+</body>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -837,6 +942,101 @@ include 'models.php';
 
     });
 </script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#element").hide();
+  });
+  $("#show").click(function(){
+    $("#element").show();
+  });
+});
+var modalEdit = function(id){
+  nombre = $("tr#" + id + " td:nth-child(1) button").text();
+  artista = $("tr#" + id + " td:nth-child(3)").text();
+  titulo = $("tr#" + id + " td:nth-child(2)").text();
+  duracion = $("tr#" + id + " td:nth-child(4)").text();
+  tamano = $("tr#" + id + " td:nth-child(5)").text();
 
-</body>
+    $("#nombre_pista_modal").val(nombre);
+    $("#artista_album_modal").val(artista);
+    $("#titulo_album_modal").val(titulo);
+    $("#milisegundos_track_modal").val(duracion);
+    $("#bytes_track_modal").val(tamano);
+    $("#id_track_modal").val(id);
+
+
+
+    $("#btn_guardar_modal").unbind('click').bind('click', function(event) {
+      jQuery.ajax({
+        url: 'guardar_track.php',
+        type: 'POST',
+        data: {
+        name:$("#nombre_pista_modal").val(),
+        id:$("#id_track_modal").val(),
+        composer:$("#artista_album_modal").val(),
+        album:$("#titulo_album_modal").val(),
+        bytes:$("#bytes_track_modal").val(),
+        milliseconds:$("#milisegundos_track_modal").val()
+        },
+        success: function(data, textStatus, xhr) {
+$("tr#" + id + " td:nth-child(1) button").text(JSON.parse(data).name);
+$("tr#" + id + " td:nth-child(3)").text(JSON.parse(data).artist);
+$("tr#" + id + " td:nth-child(2)").text(JSON.parse(data).title);
+$("tr#" + id + " td:nth-child(4)").text(JSON.parse(data).milliseconds);
+$("tr#" + id + " td:nth-child(5)").text(JSON.parse(data).bytes);
+        },
+        error: function(xhr, textStatus, errorThrown) {
+          alert('Error');
+        }
+      });
+      });
+      $("#modalEdit").modal('show');
+}
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    $("#enviar-btn").click(function() {
+
+        var name = $("input#name").val();
+        var message = $("textarea#message").val();
+
+        var dataString = 'name=' + name + '&message=' + message;
+
+        $.ajax({
+            type: "POST",
+            url: "addmessage.php",
+            data: dataString,
+            success: function() {
+                $("#element").hide();
+                $('#newmessage').append('<h2>Tu información ha sido recibida correctamente!</h2><table><tr><td>Nombre:</td><td>'+name+'</td></tr><tr><td>Mensaje:</td><td>'+message+'</td></tr></table>');
+            }
+        });
+        return false;
+    });
+
+
+
+    $( ".button").on("click", function(event){
+/* if you want to use the same modal, you must unbind() actions because bootstrap
+   remember olders actions on Modal element */
+
+$( "#MyModal" ).unbind();
+var btn = $(this);
+var id = $(this).data("id"); /* "data-id" attribute in html */
+$.ajax({
+ type: 'POST',
+ url: content_direct_delivery_in_html,
+ data: { id: id },
+success: function(html) {
+ $('#MyModal').modal().on('shown.bs.modal', function (e) {
+  $("#MyModal_body").html(html);
+ });
+}
+});
+</script>
+
 </html>
